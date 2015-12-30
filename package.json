@@ -1,0 +1,34 @@
+{
+  "name": "angulartics-hubspot",
+  "version": "0.0.1",
+  "description": "Hubspot plugin for Angulartics",
+  "keywords": [
+    "hubspot",
+    "analytics",
+    "plugin",
+    "angular",
+    "angulartics"
+  ],
+  "author": "Tyler Danielson <tysdanielson@gmail.com> (https://github.com/tydanielson)",
+  "contributors": [],
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "mkdir dist && uglifyjs lib/angulartics-hubspot.js -o dist/angulartics-hubspot.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angulartics/angulartics-hubspot"
+  },
+  "bugs": {
+    "url": "https://github.com/angulartics/angulartics-hubspot/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angulartics": "~1.0.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.23"
+  }
+}
