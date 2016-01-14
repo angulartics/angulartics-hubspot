@@ -1,4 +1,5 @@
 ## angulartics-hubspot
+[![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![Bower version][bower-image]][bower-url] [![MIT license][license-image]][license-url]
 
 Hubspot plugin for [Angulartics](http://github.com/angulartics).
 
@@ -24,8 +25,6 @@ angular.module('myApp', [
 ]);
 ```
 
-> Please note that core Angulartics doesn't export the name yet, but it will once we move it into [the new organization](http://github.com/angulartics).
-
 ### bower
 ```shell
 bower install angulartics-hubspot
@@ -44,9 +43,17 @@ angular.module('myApp', [
   'angulartics',
   'angulartics.hubspot'
 ]);
+```
 
 ## Documentation
+Documentation is available on the [Angulartics site](http://luisfarzati.github.io/angulartics).
 
+This plugin supports the following analytics calls:
+```
+registerPageTrack
+registerEventTrack
+registerSetUserProperties
+```
 
 ## Development
 
@@ -57,3 +64,12 @@ npm run build
 ## License
 
 [MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/angulartics-hubspot.svg
+[npm-url]: https://npmjs.org/package/angulartics-hubspot
+[npm-downloads-image]: https://img.shields.io/npm/dm/angulartics-hubspot.svg
+[npm-downloads-url]: https://npmjs.org/package/angulartics-hubspot
+[bower-image]: https://img.shields.io/bower/v/angulartics-hubspot.svg
+[bower-url]: http://bower.io/search/?q=angulartics-hubspot
+[license-image]: http://img.shields.io/badge/license-MIT-blue.svg
+[license-url]: LICENSE
